@@ -168,3 +168,26 @@ footer
         .bigNav{background: #4aaaa5;}
         
     }
+     /*Animation*/
+     .topNav {
+            
+        -webkit-animation-name: navColor; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+        animation-name: navColor;
+        animation-duration: 3s;
+    }
+    @keyframes navColor {
+        from {background-color:#ffffff;}
+        to {background-color:#4aaaa5;}
+    }    
+    .animationImage{
+            
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .animationImage:hover{
+        
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+       
+    }
